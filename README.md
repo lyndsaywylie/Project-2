@@ -45,13 +45,20 @@ Data was read in through CSV files in Jupyter Notebook. Rows with not applicable
 ***Stefanie***
 
 I had to join to Google Trends file Ben pulled. The date range was 2017-10-06 to 2018-01-09. The premise was "does exercise/working-out improve a person’s activeness?". 
-The data was based on: 
+The data was based on:
+
 Date
+
 Step Count
+
 Calories Burned
+
 Mood
+
 Hours of Sleep
+
 Feeling or Activeness or Inactiveness
+
 Weight
 
 Weight in KG column was deleted as the focus was more on activity and more factors such as diet play a part in weight.
