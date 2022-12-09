@@ -89,6 +89,11 @@ as an integer, calories as an integer, active as an integer, active as an intege
 
 Kim's database included 2 joined tables (times and members), times had columns id as an integer, date as variable characters (primary key), members as an integer, hour as an integer, weekday as an integer and month as an integer. The table members had only two columns: date as variable characters (primary key) and member_numbers as an integer. The two tables were joined on date to allow for further analysis.
 
+Our goal for this project was to try and see if there was an increase in health awareness during certain months of the year ('New Year New Me' was
+expectred to be the frontrunner). We chose this topic because it is currently around that time of year and wanted to see if historically, there
+was a boom in membership numbers/gym crowdedness/overall health awareness during the month of January. Solely based off of the Google Trends Data, 
+we found that this was true, but in order to do a technical analysis on this we needed to ETL the data.
+
 
 
 
