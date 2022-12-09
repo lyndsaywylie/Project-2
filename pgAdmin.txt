@@ -8,3 +8,21 @@ Create Table fittrends(
    active          INT,
    weight_kg       INT 
  );
+
+96 rows
+
+
+I then had to copy Ben's File and first created it in PgAdmin
+create table members (
+	id               DATE  primary key,
+	membership_count int
+);
+
+then I joined the 2 files and his dates were not in the same range as mine so he did a new file with my data range from google treands.
+
+SELECT fittrends.id, fittrends.stepcount, fittrends.mood, fittrends.calories, fittrends.active, fittrends.weight_kg, members.id, members.membership_count
+FROM fittrends  
+JOIN members  
+ON fittrends.id = members.id;
+
+result was 96 rows pulled!

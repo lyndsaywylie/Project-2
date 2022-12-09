@@ -1,0 +1,27 @@
+Stefanie chose https://www.kaggle.com/datasets/aroojanwarkhan/fitness-data-trends
+She had to join to Google Trends file Ben pulled.
+
+The date range was 2017-10-06 to 2018-01-09.
+
+The premise was "does exercise/working-out improve a person’s activeness?".
+The data was based on:
+
+Date
+Step Count
+Calories Burned
+Mood
+Hours of Sleep
+Feeling or Activeness or Inactiveness
+Weight
+
+Weight in KG column was deleted as the focus was more on activity and more factors such as diet play a part in weight.
+
+One could determine does working-out/exercise promotes an increase in the daily step-count or not.
+
+There were no duplicates and a check for nulls came back none.
+
+Using pandas, a connection was made to pgAdmin to load to the table fittrends.
+The same process was followed to take the google trends data and a table was built on pgAdmin and loaded and called members.
+
+The 2 tables, fittrends and members, can be joined on date.
+ 
