@@ -42,6 +42,24 @@ After reading the files in, we cleaned the data and dropped the columns we did n
 
 Data was read in through CSV files in Jupyter Notebook. Rows with not applicable data were dropped and columns were renamed. Next I connected to Postgresql and inserted 3 tables (diets_df, fitness_apps_df and gym_membership_df). In PgAdmin I renamed the columns again to differentiate the datasets before the triple join. With the triple join I created a new table called google_trends_sql.
 
+***Stefanie***
+
+I had to join to Google Trends file Ben pulled. The date range was 2017-10-06 to 2018-01-09. The premise was "does exercise/working-out improve a person’s activeness?". 
+The data was based on: 
+Date
+Step Count
+Calories Burned
+Mood
+Hours of Sleep
+Feeling or Activeness or Inactiveness
+Weight
+
+Weight in KG column was deleted as the focus was more on activity and more factors such as diet play a part in weight.
+One could determine does working-out/exercise promotes an increase in the daily step-count or not.
+There were no duplicates and a check for nulls came back none.
+Using pandas, a connection was made to pgAdmin to load to the table fittrends.
+The same process was followed to take the google trends data and a table was built on pgAdmin and loaded and called members.
+The 2 tables, fittrends and members, can be joined on date.
 
 # Load
 
