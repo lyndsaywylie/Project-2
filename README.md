@@ -62,12 +62,16 @@ Feeling or Activeness or Inactiveness
 
 Weight
 
-Weight in KG column was deleted as the focus was more on activity and more factors such as diet play a part in weight.
+Hours of Sleep column was deleted  as  it was quetionable for number of steps.
 One could determine does working-out/exercise promotes an increase in the daily step-count or not.
 There were no duplicates and a check for nulls came back none.
 Using pandas, a connection was made to pgAdmin to load to the table fittrends.
 The same process was followed to take the google trends data and a table was built on pgAdmin and loaded and called members.
-The 2 tables, fittrends and members, can be joined on date.
+The 2 tables, fittrends and members, can be joined on date. 
+
+***Kim***
+
+
 
 # Load
 
