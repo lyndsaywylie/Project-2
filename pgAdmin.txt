@@ -1,0 +1,10 @@
+Database Project2_Fitness
+
+Create Table fittrends(
+   id              DATE  Primary Key,
+   stepcount       CHAR(4),
+   mood            INT,
+   calories        INT,
+   active          INT,
+   weight_kg       INT 
+ );
