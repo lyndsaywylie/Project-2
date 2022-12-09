@@ -41,7 +41,7 @@ After reading the files in, we cleaned the data and dropped the columns we did n
 
 ***Lynds***
 
-Data was read in through CSV files in Jupyter Notebook. Rows with not applicable data were dropped and columns were renamed. Next I connected to Postgresql and inserted 3 tables (diets_df, fitness_apps_df and gym_membership_df). In PgAdmin I renamed the columns again to differentiate the datasets before the triple join. With the triple join I created a new table called google_trends_sql.
+Data was read in through CSV files in Jupyter Notebook. I used Google Trends as my data source with a date range of 01-01-2012 to 12-06-2022. Rows with inapplicable data were dropped and columns were renamed. Next I connected to Postgresql and inserted 3 tables (diets_df, fitness_apps_df and gym_membership_df). In PgAdmin I renamed the columns again to differentiate the datasets before the triple join. With the triple join I created a new table called google_trends_sql.
 
 ***Stefanie***
 
