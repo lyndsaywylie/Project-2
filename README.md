@@ -1,6 +1,6 @@
 # Project-2
 
-# EXTRACT Data Sources
+# Extract Data Sources
 
 ***Ben***
 
