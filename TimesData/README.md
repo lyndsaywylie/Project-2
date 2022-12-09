@@ -41,7 +41,7 @@ After reading the files in, we cleaned the data and dropped the columns we did n
 
 ***Lynds***
 
-Data was read in through CSV files in Jupyter Notebook. Rows with not applicable data were dropped and columns were renamed. Next I connected to Postgresql and inserted 3 tables (diets_df, fitness_apps_df and gym_membership_df). In PgAdmin I renamed the columns again to differentiate the datasets before the triple join. With the triple join I created a new table called google_trends_sql.
+Data was read in through CSV files in Jupyter Notebook. I used Google Trends as my data source with a date range of 01-01-2012 to 12-06-2022. Rows with inapplicable data were dropped and columns were renamed. Next I connected to Postgresql and inserted 3 tables (diets_df, fitness_apps_df and gym_membership_df). In PgAdmin I renamed the columns again to differentiate the datasets before the triple join. With the triple join I created a new table called google_trends_sql.
 
 ***Stefanie***
 
@@ -71,12 +71,25 @@ The 2 tables, fittrends and members, can be joined on date.
 
 ***Kim***
 
-
+Used data set from csv files provided by https://www.kaggle.com/datasets/nsrose7224/crowdedness-at-the-campus-gym to see how active people where throughout the year, and mutlitime.csv found by Ben to merge tables created together. Used Jupyter Notebook and Pandas to read csv files,  cleaned up the data and dropped the columns & duplicates not need in our dataframes. Renamed the columns to times & members to reflect tables created in pgAdmin.  Used pgAdmin to merge times & members tables using the date column as primary key. Showed the crowdedness at a gym over the span of 2 years, and what times of the week, month & hours are most popularly used by members.
 
 # Load
 
 After cleaning our data and creating matching tables in pgAdmin, we created a connection to pgAdmin and loaded our data into the corresponding 
-tables. In pgAdmin, we made primary keys to match the column that we wanted to join on (date for us). After successfully creating tables and loading the data in, we joined each of our tables in pgAdmin.
+tables. In pgAdmin, we made primary keys to match the column that we wanted to join on (date for us). After successfully creating tables and loading the data in, we joined each of our tables in pgAdmin. Google Trend Data (membership numbers) represent search interest relative to the highest point on the chart for the given region and time. A value of 100 is the peak popularity for the term. A value of 50 means that the term is half as popular. A score of 0 means there was not enough data for this term. 
+
+Ben's database inluded 2 joined tables, crowd which contained 4 columns: id as an integer, members_workingout as an integer, date as variable
+characters (primary key), and temp as a float. The members table had only two columns: date as variable characters (primary key) and membership_count as an integer. The tables were merged on date as one cohesive dataset.
+
+Lyndsay's database included 3 joined tables (diets_df, fitness_apps, and google_trends_df) all with columns 'month' and 'score'. 
+All 3 tables were joined on month to create one cohesive dataset ready for analysis.
+
+Stefanie's database included 2 joined tables (fittrends and members), fittrends had columns id as date (primary key, stepcount as character, mood
+as an integer, calories as an integer, active as an integer, active as an integer and weight_kg as an integer. The table members only had two columns: id as a date (primary key) and membership_count as an integer. The two tables were joined on date to allow for further analysis (96 rows were returned after joining).
+
+Kim's database included 2 joined tables (times and members), times had columns id as an integer, date as variable characters (primary key), members as an integer, hour as an integer, weekday as an integer and month as an integer. The table members had only two columns: date as variable characters (primary key) and member_numbers as an integer. The two tables were joined on date to allow for further analysis.
+
+
 
 
 
