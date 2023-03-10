@@ -36,7 +36,7 @@
 
 ***Ben***
 
-After finding siutable datasets, we then went into Jupyter Notebook and used Pandas read_csv function to read the data sources into the notebook. 
+After finding suitable datasets, we then went into Jupyter Notebook and used Pandas read_csv function to read the data sources into the notebook. 
 After reading the files in, we cleaned the data and dropped the columns we did not need. We also renamed the columns for readability as well as future accessability. We also dropped duplicates to avoid an IntegrityError when trying to load data into pgAdmin. The two tables I created and joined were crowddf and members. Crowddf showed the crowdedness at a gym over the span of 2 years. Members showed the gym membership count per day over the span of 2 years.
 
 ***Lynds***
